@@ -28,3 +28,34 @@ E:\ME\SU\Sinai University projects\Library\Library\obj\Debug\net6.0\refint\Libra
 E:\ME\SU\Sinai University projects\Library\Library\obj\Debug\net6.0\Library.pdb
 E:\ME\SU\Sinai University projects\Library\Library\obj\Debug\net6.0\Library.genruntimeconfig.cache
 E:\ME\SU\Sinai University projects\Library\Library\obj\Debug\net6.0\ref\Library.dll
+D:\Library-Project\bin\Debug\net6.0\appsettings.Development.json
+D:\Library-Project\bin\Debug\net6.0\appsettings.json
+D:\Library-Project\bin\Debug\net6.0\Library.staticwebassets.runtime.json
+D:\Library-Project\bin\Debug\net6.0\Library.exe
+D:\Library-Project\bin\Debug\net6.0\Library.deps.json
+D:\Library-Project\bin\Debug\net6.0\Library.runtimeconfig.json
+D:\Library-Project\bin\Debug\net6.0\Library.dll
+D:\Library-Project\bin\Debug\net6.0\Library.pdb
+D:\Library-Project\obj\Debug\net6.0\Library.GeneratedMSBuildEditorConfig.editorconfig
+D:\Library-Project\obj\Debug\net6.0\Library.AssemblyInfoInputs.cache
+D:\Library-Project\obj\Debug\net6.0\Library.AssemblyInfo.cs
+D:\Library-Project\obj\Debug\net6.0\Library.csproj.CoreCompileInputs.cache
+D:\Library-Project\obj\Debug\net6.0\Library.MvcApplicationPartsAssemblyInfo.cache
+D:\Library-Project\obj\Debug\net6.0\Library.RazorAssemblyInfo.cache
+D:\Library-Project\obj\Debug\net6.0\Library.RazorAssemblyInfo.cs
+D:\Library-Project\obj\Debug\net6.0\Library.sourcelink.json
+D:\Library-Project\obj\Debug\net6.0\staticwebassets.build.json
+D:\Library-Project\obj\Debug\net6.0\staticwebassets.development.json
+D:\Library-Project\obj\Debug\net6.0\staticwebassets\msbuild.Library.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Library-Project\obj\Debug\net6.0\staticwebassets\msbuild.build.Library.props
+D:\Library-Project\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Library.props
+D:\Library-Project\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Library.props
+D:\Library-Project\obj\Debug\net6.0\staticwebassets.pack.json
+D:\Library-Project\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\Library-Project\obj\Debug\net6.0\scopedcss\bundle\Library.styles.css
+D:\Library-Project\obj\Debug\net6.0\scopedcss\projectbundle\Library.bundle.scp.css
+D:\Library-Project\obj\Debug\net6.0\Library.dll
+D:\Library-Project\obj\Debug\net6.0\refint\Library.dll
+D:\Library-Project\obj\Debug\net6.0\Library.pdb
+D:\Library-Project\obj\Debug\net6.0\Library.genruntimeconfig.cache
+D:\Library-Project\obj\Debug\net6.0\ref\Library.dll

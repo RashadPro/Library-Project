@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "nAiHJ67k7AK/jH63BxaPGWxXplrsaongMx7tY5AGg5EW5Pn5mFkgIXpXXJloXDudizzl0oNHEFRxVFGPWHLiwg==",
+  "dgSpecHash": "NyaVIQgYdnOQEJ7PoLEEMVvuig+cl6RA3f1vLZckEBJLqNUXLG8ajBFQ6mJLg/PgOD+1nPgsQFqeb5Beo1+11A==",
   "success": true,
-  "projectFilePath": "E:\\ME\\SU\\Sinai University projects\\Library\\Library\\Library.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\Library-Project\\Library.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Flasha\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.27\\microsoft.windowsdesktop.app.ref.6.0.27.nupkg.sha512",
+    "C:\\Users\\Flasha\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.27\\microsoft.netcore.app.ref.6.0.27.nupkg.sha512",
+    "C:\\Users\\Flasha\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.27\\microsoft.aspnetcore.app.ref.6.0.27.nupkg.sha512",
+    "C:\\Users\\Flasha\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.27\\microsoft.netcore.app.host.win-x64.6.0.27.nupkg.sha512"
+  ],
   "logs": []
 }
