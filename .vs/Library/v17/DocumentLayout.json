@@ -1,10 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\ME\\SU\\Sinai University projects\\Library\\Library\\",
+  "WorkspaceRootPath": "E:\\3ird year\\secoend semester\\WDT Project\\Library-Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6A5EDB48-83BE-46BC-827E-C1E4C738953F}|Library.csproj|e:\\me\\su\\sinai university projects\\library\\library\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6A5EDB48-83BE-46BC-827E-C1E4C738953F}|Library.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6A5EDB48-83BE-46BC-827E-C1E4C738953F}|Library.csproj|e:\\3ird year\\secoend semester\\wdt project\\library-project\\models\\publisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A5EDB48-83BE-46BC-827E-C1E4C738953F}|Library.csproj|solutionrelative:models\\publisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "E:\\ME\\SU\\Sinai University projects\\Library\\Library\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "E:\\ME\\SU\\Sinai University projects\\Library\\Library\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAJAAAA",
+              "Title": "publisher.cs",
+              "DocumentMoniker": "E:\\3ird year\\secoend semester\\WDT Project\\Library-Project\\Models\\publisher.cs",
+              "RelativeDocumentMoniker": "Models\\publisher.cs",
+              "ToolTip": "E:\\3ird year\\secoend semester\\WDT Project\\Library-Project\\Models\\publisher.cs",
+              "RelativeToolTip": "Models\\publisher.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-06T14:02:49.237Z",
+              "WhenOpened": "2024-03-08T20:41:32.97Z",
               "EditorCaption": ""
             }
           ]
