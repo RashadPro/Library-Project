@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "E:\\ME\\SU\\Sinai University projects\\Library\\Library-Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6A5EDB48-83BE-46BC-827E-C1E4C738953F}|Library.csproj|e:\\me\\su\\sinai university projects\\library\\library-project\\models\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6A5EDB48-83BE-46BC-827E-C1E4C738953F}|Library.csproj|solutionrelative:models\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6A5EDB48-83BE-46BC-827E-C1E4C738953F}|Library.csproj|e:\\me\\su\\sinai university projects\\library\\library-project\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A5EDB48-83BE-46BC-827E-C1E4C738953F}|Library.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A5EDB48-83BE-46BC-827E-C1E4C738953F}|Library.csproj|e:\\me\\su\\sinai university projects\\library\\library-project\\models\\orderline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A5EDB48-83BE-46BC-827E-C1E4C738953F}|Library.csproj|solutionrelative:models\\orderline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6A5EDB48-83BE-46BC-827E-C1E4C738953F}|Library.csproj|e:\\me\\su\\sinai university projects\\library\\library-project\\models\\author_book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -13,6 +17,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{6A5EDB48-83BE-46BC-827E-C1E4C738953F}|Library.csproj|e:\\me\\su\\sinai university projects\\library\\library-project\\models\\publisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6A5EDB48-83BE-46BC-827E-C1E4C738953F}|Library.csproj|solutionrelative:models\\publisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A5EDB48-83BE-46BC-827E-C1E4C738953F}|Library.csproj|e:\\me\\su\\sinai university projects\\library\\library-project\\models\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A5EDB48-83BE-46BC-827E-C1E4C738953F}|Library.csproj|solutionrelative:models\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,32 +35,57 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "orderline.cs",
+              "DocumentMoniker": "E:\\ME\\SU\\Sinai University projects\\Library\\Library-Project\\Models\\orderline.cs",
+              "RelativeDocumentMoniker": "Models\\orderline.cs",
+              "ToolTip": "E:\\ME\\SU\\Sinai University projects\\Library\\Library-Project\\Models\\orderline.cs",
+              "RelativeToolTip": "Models\\orderline.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T20:38:30.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "user.cs",
+              "DocumentMoniker": "E:\\ME\\SU\\Sinai University projects\\Library\\Library-Project\\Models\\user.cs",
+              "RelativeDocumentMoniker": "Models\\user.cs",
+              "ToolTip": "E:\\ME\\SU\\Sinai University projects\\Library\\Library-Project\\Models\\user.cs",
+              "RelativeToolTip": "Models\\user.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAA5wA4AAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T20:36:34.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "author_book.cs",
               "DocumentMoniker": "E:\\ME\\SU\\Sinai University projects\\Library\\Library-Project\\Models\\author_book.cs",
               "RelativeDocumentMoniker": "Models\\author_book.cs",
               "ToolTip": "E:\\ME\\SU\\Sinai University projects\\Library\\Library-Project\\Models\\author_book.cs",
               "RelativeToolTip": "Models\\author_book.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAVAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-09T12:08:45.393Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "author.cs",
               "DocumentMoniker": "E:\\ME\\SU\\Sinai University projects\\Library\\Library-Project\\Models\\author.cs",
               "RelativeDocumentMoniker": "Models\\author.cs",
               "ToolTip": "E:\\ME\\SU\\Sinai University projects\\Library\\Library-Project\\Models\\author.cs",
               "RelativeToolTip": "Models\\author.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAmAAAA",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAQwAsAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-09T12:06:11.92Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-09T12:06:11.92Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "publisher.cs",
               "DocumentMoniker": "E:\\ME\\SU\\Sinai University projects\\Library\\Library-Project\\Models\\publisher.cs",
               "RelativeDocumentMoniker": "Models\\publisher.cs",
