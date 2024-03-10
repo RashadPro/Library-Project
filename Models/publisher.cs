@@ -6,5 +6,8 @@
         public string name { get; set; }
         public string location { get; set; }
         public int phone { get; set; }
+
+        //List Of books
+        public List<book> books { get; set; }
     }
 }
