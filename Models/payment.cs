@@ -7,11 +7,9 @@
         public int amount { get; set; }
         public string states { get; set; }
 
+        public invoice invoices { get; set; }
 
         //pk invoice
-        public List<invoice> invoices { get; set; }
-
-        //pk user
-        public List<user> user { get; set; }
+        public List<user>  user { get; set; }
     }
 }

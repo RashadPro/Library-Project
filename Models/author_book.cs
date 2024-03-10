@@ -8,6 +8,6 @@
 
         //foreign key
         public int book_ISBN { get; set; }
-        //public book book { get; set; } // navigtion property
+        public book book { get; set; } // navigtion property
     }
 }

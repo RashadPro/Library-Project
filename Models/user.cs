@@ -9,12 +9,13 @@
         public string email { get; set; }
         public string address { get; set; }
         public int phone { get; set; }
+
+
         //pk payment
         public List <payment> payments { get; set; }
         //invoice
         public List <invoice> invoices { get; set; }
-
         //prder
-        //public List <order> orders { get; set; }
+        public List <order> orders { get; set; }
     }
 }
