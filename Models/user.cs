@@ -2,7 +2,7 @@
 {
     public class user
     {
-        public int ISBN { get; set; }
+        public int id { get; set; }
         public string fname { get; set; }
         public string lname { get; set; }
         public int age { get; set; }

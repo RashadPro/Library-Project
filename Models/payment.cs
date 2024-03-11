@@ -2,14 +2,15 @@
 {
     public class payment
     {
-        public int payment_ISBN { get; set; }
+        public int paymentId { get; set; }
         public DateTime data { get; set; }
         public int amount { get; set; }
         public string states { get; set; }
 
-        public invoice invoices { get; set; }
+        // FK 
+        public int invoiceId { get; set; }
+        public invoice invoice { get; set; } // ref nav
 
-        //pk invoice
-        public List<user>  user { get; set; }
+
     }
 }
