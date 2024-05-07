@@ -16,8 +16,6 @@ namespace Library.Models
         public int Age { get; set; }
         [Required]
         public string Email { get; set; }
-        [Required]
-        public string Address { get; set; }
         public int Phone { get; set; }
 
         [ValidateNever]
