@@ -1,16 +1,19 @@
-﻿namespace Library.Models
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace Library.Models
 {
-    public class payment
+    public class Payment
     {
-        public int paymentId { get; set; }
-        public DateTime data { get; set; }
-        public int amount { get; set; }
-        public string states { get; set; }
+        [Key]
+        public int PaymentISBN { get; set; }
+        public DateTime Data { get; set; }
+        public int Amount { get; set; }
+        public string States { get; set; }
 
-        // FK 
-        public int invoiceId { get; set; }
-        public invoice invoice { get; set; } // ref nav
-
+        [ForeignKey("User")]
+        public int UserId { get; set; }
+        public User User { get; set; } // navigtion property
 
     }
 }

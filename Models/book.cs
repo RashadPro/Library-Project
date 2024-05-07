@@ -1,20 +1,31 @@
-﻿namespace Library.Models
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace Library.Models
 {
-    public class book
+   
+    public class Book
     {
-        public int book_ISBN { get; set; }
-        public string version { get; set; }
-        public string name { get; set; }
-        public DateTime date_of_publication { get; set; }
-        public int quantity { get; set; }
-        public publisher Publisher { get; set; }
-        public int pup_ISBN { get; set; }
+        [Key]
+        public int Id { get; set; }
+        public string Version { get; set; }
+        public string Name { get; set; }
+        public DateTime DateOfPublication { get; set; }
+        public int Quantity { get; set; }
+        public int PupISBN { get; set; }
 
-
-        public booktype BookType { get; set; }
+        [ForeignKey("Publisher")]
+        [ValidateNever]
+        public int PublisherId { get; set; }
+        [ValidateNever]
+        public Publisher Publisher { get; set; } // navigtion property
 
         //List Of author_books
-        public List<author_book> Author_Book { get; set; }
+        [ValidateNever]
+        public ICollection<AuthorBook> AuthorBooks { get; set; }
+        [ValidateNever]
+        public ICollection<Orderline> Orderlines { get; set; }
 
     }
 }

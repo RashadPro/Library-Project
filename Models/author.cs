@@ -1,18 +1,28 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Library.Models
 {
-    public class author
+    public class Author
     {
-        public int id { get; set; }
-        public string name { get; set; }
-        public int age { get; set; }
-        public string address { get; set; }
+        [Key]
+        //[DatabaseGenerated(DatabaseGeneratedOption.None)]
+        public int Id { get; set; }
+        [Required]
+        public string Name { get; set; }
+        [Required]
+        public int Age { get; set; }
+        [Required]
+        public string Address { get; set; }
+        [Required]
         public string Email { get; set; }
-        public int phone { get; set; }
-        public string country { get; set; }
+        public int Phone { get; set; }
+        public string Country { get; set; }
 
+
+        [ValidateNever]
         //List Of author_books
-        public List<author_book> author_books { get; set; }
+        public ICollection<AuthorBook> AuthorBooks { get; set; }
     }
 }

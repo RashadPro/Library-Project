@@ -1,15 +1,22 @@
-﻿namespace Library.Models
+﻿using MessagePack;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace Library.Models
 {
-    public class orderline
+    public class Orderline
     {
+        
+        public int Id { get; set; }
         //foreign key
-        public int order_ISBN { get; set; }
-        public order Orderes { get; set; }
+        [ForeignKey("Order")]
+        public int OrderId { get; set; }
+        public Order Ordere { get; set; }
 
         //foreign key
-        public int book_ISBN { get; set; }
-        public book Bookes { get; set; }
+        [ForeignKey("Book")]
+        public int BookId { get; set; }
+        public Book Booke { get; set; }
 
-        public decimal amount { get; set; }
+
     }
 }

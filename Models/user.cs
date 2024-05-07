@@ -1,21 +1,26 @@
-﻿namespace Library.Models
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
+using System.ComponentModel.DataAnnotations;
+
+namespace Library.Models
 {
-    public class user
+    public class User
     {
-        public int id { get; set; }
-        public string fname { get; set; }
-        public string lname { get; set; }
-        public int age { get; set; }
-        public string email { get; set; }
-        public string address { get; set; }
-        public int phone { get; set; }
+        [Key]
+        public int Id { get; set; }
+        [Required]
+        public string Fname { get; set; }
+        [Required]
+        public string Lname { get; set; }
+        public int Age { get; set; }
+        [Required]
+        public string Email { get; set; }
+        [Required]
+        public string Address { get; set; }
+        public int Phone { get; set; }
 
-
-        //pk payment
-        public List <payment> payments { get; set; }
-        //invoice
-        public List <invoice> invoices { get; set; }
-        //prder
-        public List <order> orders { get; set; }
+        [ValidateNever]
+        public ICollection<Payment> Payments { get; set; }
+        [ValidateNever]
+        public ICollection<Order> Orders { get; set; }
     }
 }

@@ -1,14 +1,21 @@
-﻿namespace Library.Models
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace Library.Models
 {
-    public class invoice
+    public class Invoice
     {
-        public int invoiceId { get; set; }
-        public int cust_num { get; set; }
-        public int date { get; set; }
-        public int amount { get; set; }
+        [Key]
+        public int InvoiceISBN { get; set; }
+        public int CustNum { get; set; }
+        public int Date { get; set; }
+        public int Amount { get; set; }
 
-
-        public payment? Payment { get; set; }
-
+        [ForeignKey("Order")]
+        [ValidateNever]
+        public int OrderId { get; set; }
+        [ValidateNever]
+        public User Order { get; set; } // navigtion property
     }
 }

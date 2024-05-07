@@ -1,13 +1,16 @@
-﻿namespace Library.Models
-{
-    public class publisher
-    {
-        public int pup_ISBN { get; set; }
-        public string name { get; set; }
-        public string location { get; set; }
-        public int phone { get; set; }
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
+using System.ComponentModel.DataAnnotations;
 
-        //List Of books
-        public List<book> books { get; set; }
+namespace Library.Models
+{
+    public class Publisher
+    {
+        [Key]
+        public int PupISBN { get; set; }
+        public string Name { get; set; }
+        public string Location { get; set; }
+        public int Phone { get; set; }
+        [ValidateNever]
+        public ICollection<Book> Books { get; set; }
     }
 }
