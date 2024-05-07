@@ -9,7 +9,7 @@ namespace Library.Models
         [Key]
         public int InvoiceISBN { get; set; }
         public int CustNum { get; set; }
-        public int Date { get; set; }
+        public DateTime Date { get; set; }
         public int Amount { get; set; }
 
         [ForeignKey("Order")]
