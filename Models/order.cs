@@ -7,7 +7,7 @@ namespace Library.Models
     public class Order
     {
         [Key]
-        public string OrderISBN { get; set; }
+        public int OrderISBN { get; set; }
         public string NameBook { get; set; }
         public int Quantity { get; set; }
         public DateTime Date { get; set; }

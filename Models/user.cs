@@ -1,11 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Library.Models
 {
     public class User
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int Id { get; set; }
         [Required]
         public string Fname { get; set; }
@@ -22,5 +24,7 @@ namespace Library.Models
         public ICollection<Payment> Payments { get; set; }
         [ValidateNever]
         public ICollection<Order> Orders { get; set; }
+
+      
     }
 }

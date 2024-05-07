@@ -48,7 +48,7 @@ namespace Library.Controllers
         // GET: Invoices/Create
         public IActionResult Create()
         {
-            ViewData["OrderId"] = new SelectList(_context.Users, "Id", "Address");
+            ViewData["OrderId"] = new SelectList(_context.Orders, "OrderISBN", "OrderISBN");
             return View();
         }
 
@@ -65,7 +65,7 @@ namespace Library.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["OrderId"] = new SelectList(_context.Users, "Id", "Address", invoice.OrderId);
+            ViewData["OrderId"] = new SelectList(_context.Orders, "OrderISBN", "OrderISBN", invoice.OrderId);
             return View(invoice);
         }
 
@@ -82,7 +82,7 @@ namespace Library.Controllers
             {
                 return NotFound();
             }
-            ViewData["OrderId"] = new SelectList(_context.Users, "Id", "Address", invoice.OrderId);
+            ViewData["OrderId"] = new SelectList(_context.Orders, "OrderISBN", "OrderISBN", invoice.OrderId);
             return View(invoice);
         }
 
@@ -118,7 +118,7 @@ namespace Library.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["OrderId"] = new SelectList(_context.Users, "Id", "Address", invoice.OrderId);
+            ViewData["OrderId"] = new SelectList(_context.Orders, "OrderISBN", "OrderISBN", invoice.OrderId);
             return View(invoice);
         }
 

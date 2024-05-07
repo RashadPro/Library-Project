@@ -132,15 +132,10 @@ namespace Library.Migrations
                     b.Property<DateTime>("Date")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("OrderISBN")
-                        .HasColumnType("nvarchar(450)");
-
                     b.Property<int>("OrderId")
                         .HasColumnType("int");
 
                     b.HasKey("InvoiceISBN");
-
-                    b.HasIndex("OrderISBN");
 
                     b.HasIndex("OrderId");
 
@@ -149,8 +144,11 @@ namespace Library.Migrations
 
             modelBuilder.Entity("Library.Models.Order", b =>
                 {
-                    b.Property<string>("OrderISBN")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("OrderISBN")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("OrderISBN"), 1L, 1);
 
                     b.Property<DateTime>("Date")
                         .HasColumnType("datetime2");
@@ -193,15 +191,11 @@ namespace Library.Migrations
                     b.Property<int>("OrderId")
                         .HasColumnType("int");
 
-                    b.Property<string>("OrdereOrderISBN")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
-
                     b.HasKey("Id");
 
                     b.HasIndex("BookId");
 
-                    b.HasIndex("OrdereOrderISBN");
+                    b.HasIndex("OrderId");
 
                     b.ToTable("Orderlines");
                 });
@@ -261,10 +255,7 @@ namespace Library.Migrations
             modelBuilder.Entity("Library.Models.User", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("Address")
                         .IsRequired()
@@ -325,12 +316,8 @@ namespace Library.Migrations
 
             modelBuilder.Entity("Library.Models.Invoice", b =>
                 {
-                    b.HasOne("Library.Models.Order", null)
+                    b.HasOne("Library.Models.Order", "Order")
                         .WithMany("Invoices")
-                        .HasForeignKey("OrderISBN");
-
-                    b.HasOne("Library.Models.User", "Order")
-                        .WithMany()
                         .HasForeignKey("OrderId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -359,7 +346,7 @@ namespace Library.Migrations
 
                     b.HasOne("Library.Models.Order", "Ordere")
                         .WithMany("Orderlines")
-                        .HasForeignKey("OrdereOrderISBN")
+                        .HasForeignKey("OrderId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

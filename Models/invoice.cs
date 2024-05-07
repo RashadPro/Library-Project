@@ -16,6 +16,8 @@ namespace Library.Models
         [ValidateNever]
         public int OrderId { get; set; }
         [ValidateNever]
-        public User Order { get; set; } // navigtion property
+        public Order Order { get; set; } // navigtion property
+
+
     }
 }
