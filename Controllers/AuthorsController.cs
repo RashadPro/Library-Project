@@ -20,12 +20,20 @@ namespace Library.Controllers
         }
 
         // GET: Authors
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string search)
         {
-              return _context.Authors != null ? 
-                          View(await _context.Authors.ToListAsync()) :
-                          Problem("Entity set 'ApplicationDpContext.Authors'  is null.");
+            var authors = await _context.Authors.ToListAsync();
+            if (!String.IsNullOrEmpty(search))
+            {
+                authors = authors.Where(author =>
+                    author.Name.Contains(search, StringComparison.OrdinalIgnoreCase) ||
+                    author.Email.Contains(search, StringComparison.OrdinalIgnoreCase) ||
+                   author.Phone.ToString().Contains(search, StringComparison.OrdinalIgnoreCase) 
+                ).ToList();
+            }
+            return View(authors);
         }
+
 
         // GET: Authors/Details/5
         public async Task<IActionResult> Details(int? id)
