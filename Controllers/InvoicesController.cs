@@ -20,10 +20,19 @@ namespace Library.Controllers
         }
 
         // GET: Invoices
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string search)
         {
-            var applicationDpContext = _context.Invoices.Include(i => i.Order);
-            return View(await applicationDpContext.ToListAsync());
+            var invoices = await _context.Invoices.ToListAsync();
+
+            if (!String.IsNullOrEmpty(search))
+            {
+                invoices = invoices.Where(invoice =>
+                    invoice.CustNum.ToString().Contains(search, StringComparison.OrdinalIgnoreCase) ||
+                    invoice.Amount.ToString().Contains(search, StringComparison.OrdinalIgnoreCase) ||
+                   invoice.InvoiceISBN.ToString().Contains(search, StringComparison.OrdinalIgnoreCase)
+                ).ToList();
+            }
+            return View(invoices);
         }
 
         // GET: Invoices/Details/5

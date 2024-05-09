@@ -20,11 +20,19 @@ namespace Library.Controllers
         }
 
         // GET: Users
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string search)
         {
-              return _context.Users != null ? 
-                          View(await _context.Users.ToListAsync()) :
-                          Problem("Entity set 'ApplicationDpContext.Users'  is null.");
+            var users = await _context.Users.ToListAsync();
+            if (!String.IsNullOrEmpty(search))
+            {
+                users = users.Where(user =>
+                    user.Fname.Contains(search, StringComparison.OrdinalIgnoreCase) ||
+                    user.Id.ToString().Contains(search, StringComparison.OrdinalIgnoreCase) ||
+                    user.Email.Contains(search, StringComparison.OrdinalIgnoreCase) ||
+                   user.Phone.ToString().Contains(search, StringComparison.OrdinalIgnoreCase)
+                ).ToList();
+            }
+            return View(users);
         }
 
         // GET: Users/Details/5
